@@ -7,6 +7,8 @@ public class FloatPlus {
         float result = Float.parseFloat(val1) + Float.parseFloat(val2);
         System.out.println(result);
 
+        String val3 = "1.11111111";
+        String val4 = "2.11111111";
         double result2 = Double.parseDouble(val1) + Double.parseDouble(val2);
         System.out.println(result2);
     }
