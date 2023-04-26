@@ -1,4 +1,4 @@
-package com.example.javaproject.week2;
+package com.example.javaproject.week2.d2;
 
 public class FloatPlus {
     public static void main(String[] args) {
