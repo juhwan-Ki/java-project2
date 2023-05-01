@@ -5,5 +5,9 @@ public class LoopChar {
         for(char c = 'a'; c <= 'z'; c++){
             System.out.println(c);
         }
+
+        for(char c = '가'; c <= '힣'; c++){
+            System.out.println(c);
+        }
     }
 }
