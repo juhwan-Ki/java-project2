@@ -5,4 +5,6 @@ module com.example.javaproject {
 
     opens com.example.javaproject to javafx.fxml;
     exports com.example.javaproject;
+    exports com.example.javaproject.programmers;
+    opens com.example.javaproject.programmers to javafx.fxml;
 }

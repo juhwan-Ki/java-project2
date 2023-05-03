@@ -1,4 +1,4 @@
-package com.example.javaproject.baekjoon;
+package com.example.javaproject.programmers;
 
 import java.util.Arrays;
 
