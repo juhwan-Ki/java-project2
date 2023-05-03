@@ -18,7 +18,9 @@ public class Codeup1071 {
         int num;
         do {
             num = sc.nextInt();
-            System.out.println(num);
+            if(num != 0) {
+                System.out.println(num);
+            }
         } while (num != 0);
     }
 }
