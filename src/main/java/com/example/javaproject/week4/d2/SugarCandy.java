@@ -5,10 +5,27 @@ import java.util.Scanner;
 
 public class SugarCandy {
     private int[][] arr;
+    boolean printSeparator;
 
+    // 메소드 오버로딩
     public SugarCandy(int rowCnt, int colCnt) {
         this.arr = new int[rowCnt][colCnt];
     }
+
+    public SugarCandy() {
+        this.arr = new int[5][5];
+        this.printSeparator = true;
+    }
+
+    public SugarCandy(boolean printSeparator) {
+        this.arr = new int[5][5];
+        this.printSeparator = printSeparator;
+    }
+
+    public SugarCandy(int colCnt) {
+        this.arr = new int[5][colCnt];
+    }
+
     public void setBeam(int l, int d, int x, int y){
         for (int i = 0; i < l; i++) {
             if(d == 0){ // 가로
@@ -23,13 +40,15 @@ public class SugarCandy {
         for (int i = 0; i < arr.length; i++) {
             System.out.println(Arrays.toString(arr[i]));
         }
-        System.out.println("==============");
+        if(this.printSeparator) System.out.println("==============");
     }
 
     public static void main(String[] args) {
         int rowCnt = 5;
         int colCnt = 5;
-        SugarCandy sc = new SugarCandy(rowCnt,colCnt);
+        //SugarCandy sc = new SugarCandy(rowCnt,colCnt);
+        //SugarCandy sc = new SugarCandy();
+        SugarCandy sc = new SugarCandy(colCnt);
         sc.printArr();
         sc.setBeam(2,0,1,1);
         sc.printArr();
