@@ -22,7 +22,7 @@ public class RockScissorsPaper {
         RockScissorsPaper rsc = new RockScissorsPaper();
 
         while (true){
-            System.out.print("가위(1) 바위(0) 보(2)중 하나를 입력해주세요 : ");
+            System.out.print("가위 바위 보중 하나를 입력해주세요 : ");
             int input = sc.nextInt();
             if(input < 0 || input > 2){
                 System.out.println("숫자를 잘못 입력하셨습니다. 다시 입력해주세요.");
