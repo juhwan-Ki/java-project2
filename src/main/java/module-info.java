@@ -9,4 +9,6 @@ module com.example.javaproject {
     opens com.example.javaproject.programmers to javafx.fxml;
     exports com.example.javaproject.week4.d1;
     opens com.example.javaproject.week4.d1 to javafx.fxml;
+    exports com.example.javaproject.week4.d3;
+    opens com.example.javaproject.week4.d3 to javafx.fxml;
 }
